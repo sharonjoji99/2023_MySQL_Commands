@@ -24,8 +24,8 @@ CREATE TABLE VehicleModelManufacturer (
 
 CREATE TABLE Vehicle (
     LicenseNo VARCHAR(255) PRIMARY KEY,
-    DriverID INT,
-    Model VARCHAR(255),
+    DriverID INT NOT NULL,
+    Model VARCHAR(255) NOT NULL,
     Color VARCHAR(255),
     Year INT,
     VehicleCategory VARCHAR(32),
@@ -76,7 +76,8 @@ CREATE TABLE Space (
     SpaceNo INT NOT NULL,
     SpaceType VARCHAR(255) NOT NULL,
     PRIMARY KEY (PLName, ZoneID, SpaceNo),
-    FOREIGN KEY (PLName, ZoneID) REFERENCES Zone(PLName, ZoneID) ON DELETE CASCADE
+    FOREIGN KEY (PLName, ZoneID) REFERENCES Zone(PLName, ZoneID) ON DELETE CASCADE,
+    CHECK (SpaceType in ('Electric', 'Handicap', 'Compact car', 'Regular'))
 );
 
 CREATE TABLE PermitLocation (
