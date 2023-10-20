@@ -95,6 +95,7 @@ CREATE TABLE ParkingLocation (
     SpaceNo INT NOT NULL,
     StaffID INT NOT NULL,
     AvailabilityStatus BOOLEAN NOT NULL,
+    PRIMARY KEY (PLName, ZoneID, SpaceNo),
     FOREIGN KEY (PLName, ZoneID, SpaceNo) REFERENCES Space(PLName, ZoneID, SpaceNo) ON DELETE CASCADE,
     FOREIGN KEY (StaffID) REFERENCES Staff(StaffID)
 );
