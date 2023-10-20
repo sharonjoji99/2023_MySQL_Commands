@@ -11,8 +11,10 @@ CREATE TABLE Staff(
 CREATE TABLE Driver (
     DriverID INT PRIMARY KEY,
     DriverName VARCHAR(255) NOT NULL,
-    Status VARCHAR(1)
-    CHECK (Status in ('S','E', 'V'))
+    Status VARCHAR(1) CHECK (Status IN ('S', 'E', 'V')),
+    CHECK (
+        (Status = 'V' AND CHAR_LENGTH(CONVERT(DriverID, CHAR(10))) = 10)
+    )
 );
 
 CREATE TABLE VehicleModelManufacturer (

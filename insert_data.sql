@@ -20,8 +20,8 @@ VALUES
     (567891234, 'Bob', 'E'),
     (891234567, 'Charlie', 'S'),
     (345678912, 'Eve', 'E'),
-    (789123456, 'Ivan', 'V'),
-    (912345678, 'Mallory', 'V'),
+    (7891234587, 'Ivan', 'V'),
+    (9123456781, 'Mallory', 'V'),
     (876543219, 'Trent', 'S');
 
 INSERT INTO
@@ -46,8 +46,8 @@ VALUES
 ('GHI012', 567891234, '3 Series', 'White', 2022, 'Handicap'),
 ('JKL345', 891234567, 'Camry', 'Green', 2018, 'Regular'),
 ('MNO678', 345678912, 'Explorer', 'Grey', 2022, 'Regular'),
-('PQR901', 789123456, 'Civic', 'Yellow', 2020, 'Regular'),
-('STU234', 912345678, '3 Series', 'Brown', 2019, 'Regular'),
+('PQR901', 7891234587, 'Civic', 'Yellow', 2020, 'Regular'),
+('STU234', 9123456781, '3 Series', 'Brown', 2019, 'Regular'),
 ('VWX567', 876543219, 'Camry', 'Silver', 2021, 'Regular');
 
 INSERT INTO 
@@ -72,8 +72,8 @@ VALUES
 (567891234, 'GHI012'),
 (891234567, 'JKL345'),
 (345678912, 'MNO678'),
-(789123456, 'PQR901'),
-(912345678, 'STU234'),
+(7891234587, 'PQR901'),
+(9123456781, 'STU234'),
 (876543219, 'VWX567');
 
 INSERT INTO
@@ -175,8 +175,8 @@ VALUES
     (567891234, 'GHI012'),
     (891234567, 'JKL345'),
     (345678912, 'MNO678'),
-    (789123456, 'PQR901'),
-    (912345678, 'STU234'),
+    (7891234587, 'PQR901'),
+    (9123456781, 'STU234'),
     (876543219, 'VWX567');
 
 INSERT INTO 
@@ -188,6 +188,6 @@ VALUES
     (567891234, 4, 'Requested'),
     (891234567, 5, 'Rejected'),
     (345678912, 6, 'Accepted'),
-    (789123456, 7, 'Requested'),
-    (912345678, 8, 'Rejected'),
+    (7891234587, 7, 'Requested'),
+    (9123456781, 8, 'Rejected'),
     (876543219, 9, 'Accepted');
