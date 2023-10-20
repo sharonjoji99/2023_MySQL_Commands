@@ -120,3 +120,10 @@ CREATE TABLE Appeals (
     FOREIGN KEY (DriverID) REFERENCES Driver(DriverID),
     FOREIGN KEY (CitationNo) REFERENCES Citation(CitationNo)
 );
+
+CREATE TABLE DriverVehicleCitation (
+    Driver INT NOT NULL,
+    LicenseNo INT NOT NULL
+    FOREIGN KEY (DriverID) REFERENCES Driver(DriverID),
+    FOREIGN KEY (LicenseNo) REFERENCES Vehicle(LicenseNo)
+);
