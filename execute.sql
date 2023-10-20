@@ -15,7 +15,7 @@ CREATE TABLE Driver (
 
 CREATE TABLE VehicleModelManufacturer (
     Model VARCHAR(255) PRIMARY KEY,
-    Manufacturer VARCHAR(255),
+    Manufacturer VARCHAR(255)
 );
 
 CREATE TABLE Vehicle (
